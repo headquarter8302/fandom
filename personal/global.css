@@ -1,0 +1,39 @@
+/* Imports */
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:Highlight.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:OrganizedNotifs.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:AdRailRemove/code.css&only=styles";
+
+/* Codes */
+.mw-parser-output img {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+
+div.wds-global-navigation__content-bar-left {
+	display: none;
+}
+
+div.wds-global-navigation__content-bar-right {
+	width: 100%;
+}
+
+div#WikiaBar {
+	display: none;
+}
+
+div.wds-global-navigation__start-a-wiki {
+	display: none;
+}
+
+nav#globalNavigation {
+	background: rgba(0, 42, 50, 0.5);
+	transition: background 1s ease-out;
+}
+
+nav#globalNavigation:hover {
+	background: #002a32;
+}
