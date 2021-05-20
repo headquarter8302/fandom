@@ -1,6 +1,6 @@
 /* Imports */
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:Highlight.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:OrganizedNotifs.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:WDSNotificationCustomization.css&only=styles";
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:AdRailRemove/code.css&only=styles";
 
 /* Codes */
