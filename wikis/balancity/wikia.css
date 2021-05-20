@@ -1,0 +1,456 @@
+/*========================================================================================================================
+* WARNING! EVERYTHING HERE WILL BE PUSHED TO USERS AS SOON AS POSSIBLE, DO NOT INTERFERE IF YOU DON'T HAVE CSS SKILLS!
+*
+* Never, ever, ever, EVER. Use any padding on wds-community-header again!
+* 
+* If there is a warning about the use of "!important", just ignore that.
+*
+* Under GNU General Public License v3.0 unless otherwise noted
+/*========================================================================================================================*/
+
+
+/* A precious tips from https://community.fandom.com/wiki/User:Andrewds1021 */
+#globalNavigation .wds-global-navigation__search-scope-dropdown .wds-dropdown__toggle {
+    display: inline-block;
+}
+
+/* Imported from https://theportalwiki.com/wiki/MediaWiki:Common.css */
+/* For positioning icons at top-right, used in some templates */
+.skin-vector div.topicon {
+    position: absolute; 
+    z-index: 1; 
+    display: block !important;
+}
+
+.skin-monobook div.topicon {
+    position: absolute; 
+    z-index: 1; 
+    display: block !important;
+}
+
+.skin-oasis div.topicon {
+	position: absolute;
+	z-index: 1;
+	display: block !important
+}
+
+/* Color user names of sysops in recent changes, logs, page histories, etc. */
+a.mw-userlink[href$="/wiki/User:Headquarter8302"] {
+	color:#5100ff !important;
+	font-weight: bold !important;
+	background-color: rgba(138, 91, 224, 0.3);
+}
+
+/*Site Header*/
+.wds-community-header {
+    font-family: Dosis, sans-serif !important;
+}
+
+/* Headings */
+.WikiaArticle h1 {
+	font-family: "Open Sans";
+}
+
+.WikiaArticle h2 {
+    font-family: "Josefin Sans";
+    border-bottom: 3px solid white;
+    padding-bottom: 0;
+    padding: 4px;
+}
+
+.WikiaArticle h3 {
+    font-family: Raleway;
+    padding-bottom: 1px;
+    padding: 4px;
+    font-size: 95% ;
+}
+
+/* Stub Styling (Can't see shit if it is that bright) */
+#stub {
+	color: black !important;
+}
+
+/* "Pre" Styling */
+pre {
+	background-color: #202020 !important;
+    font-size: 100%;
+	overflow: auto;
+	height: auto;
+	width: 100%;
+	white-space: pre-wrap !important;
+	padding: 3px;
+	font-family: 'Source Code Pro', sans-serif;
+}
+
+/* Novelties for all people who helped me develop this wiki! */
+/* HumansCanWinElves a.k.a Nam */
+a[href$="/wiki/User:HumansCanWinElves"] {
+	background-color: blue !important;
+}
+
+/* Andrewds1021 a.k.a Andrew */
+a[href$="/wiki/User:Andrewds1021"] {
+    background-color: blue !important;
+}
+
+/* KockaAdmiralac a.k.a Kot͡skaa */
+a[href$="/wiki/User:KockaAdmiralac"] {
+    background-color: blue !important;
+}
+
+/* Highlighting stuff */
+.WikiaPage ::selection {
+    background: #002a32; /* WebKit/Blink Browsers */
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.WikiaPage ::-moz-selection {
+    background: #002a32; /* Gecko Browsers */
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.WikiaPage pre ::selection {
+	text-shadow: none;
+	background: #0000E5 !important;
+}
+
+.WikiaPage pre ::-moz-selection {
+	text-shadow: none;
+	background: #0000E5 !important;
+}
+
+/* Profile customizations */
+.modal-wrapper .user-profile-editor {
+	background-color: black;
+}
+
+#userProfileApp {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.15), rgba(252, 198, 3, 0.15));
+    background-size: cover !important;
+}
+
+#userProfileApp .user-profile-navigation__link.is-active {
+    border-bottom-color: lightblue;
+    color: lightblue;
+}
+
+#userProfileApp .user-profile-navigation__link.false:hover {
+    border-bottom-color: lightblue;	
+}
+
+/* Audio Box */
+.audio-box { 
+    background-color: #F2F2F2; 
+    border: 1px solid #CCC; 
+    line-height: 1em; 
+    overflow: visible; 
+    padding: 12px; 
+    white-space: nowrap; 
+    height: auto;
+}
+
+/* Global looks for Links */
+a {
+	display: inline-block;
+}
+
+/* Link effects */
+.WikiaArticle a.new:hover {
+	animation: shake infinite;
+	animation-duration: 1s;
+}
+
+a:active {
+	color: yellow ;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ADD8E6;
+	text-decoration: none;
+}
+
+/* Not all font style needs to be applied */
+.wds-community-header__counter-value {
+	font-weight: normal;
+	font-style: normal;
+	font-family: Rubik, helvetica, Arial, sans-serif;
+}
+
+.wds-community-header__counter-label {
+	font-weight: normal;
+	font-style: normal;
+	font-family: Rubik, helvetica, Arial, sans-serif;
+}
+
+/* Fixing overzoomed background */
+body.skin-oasis,
+body.background-dynamic.skin-oasis::after,
+body.background-dynamic.skin-oasis::before {
+    background-size: cover !important;
+}
+
+/* Pages backgrounds */
+body.page-Game_over {
+    background: #000000 url(https://static.wikia.nocookie.net/balancity/images/e/eb/Game_over_0_meter.png/revision/latest) 0 0 no-repeat;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    
+}
+
+body.page-Game_Over {
+    background: #000000 url(https://static.wikia.nocookie.net/balancity/images/e/eb/Game_over_0_meter.png/revision/latest) 0 0 no-repeat;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+body.page-BalanCity_Wiki_Rules {
+	background-color: black;
+}
+
+/* Wordmark */
+.wds-community-header__wordmark:hover {
+	animation: wobble infinite;
+	animation-duration: 5s;
+}
+
+/* Rail wrapper */
+#WikiaBar {
+	border-left: 1px solid white;
+}
+
+#WikiaRailWrapper {
+	border-left: 1px solid white;
+	font-family: Rubik;
+}
+
+/* Like highlighting, but done by the browser */
+:target {
+	background-color: DarkGrey;
+	color: black;
+	background-size: 100%;
+}
+
+/* Stylic borders */
+.WikiaPageContentWrapper {
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	padding: 5px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+/* Color problems */
+.wds-dialogue__title, .wds-dialogue__content {
+	color: white;
+}
+
+/* License */
+.license-description {
+	border-top: 1px solid white;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* DIsambig */
+.disambiguation {
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	padding: 3px;
+}
+
+/* Copied from GTA Wiki */
+/* Featured video banner (Just in case) */
+.featured-video__wrapper:after,
+.featured-video.is-collapsed .featured-video__player-container:after {
+    content: 'The above video was added by FANDOM staff,%20not the editors of this site.%20Its content may not accurately represent the content of this article.' !important;
+    background: #3C3C3C;
+    text-align: center !important;
+    border: 2px solid #00055e;
+    border-radius: 0;
+    margin-top: .5em !important;
+    padding: .5em !important;
+    display: block !important;
+}
+
+/* Full width userpage nav */
+/* The style below were given by https://community.fandom.com/wiki/User:CrazyForMyself */
+.user-profile-navigation .user-profile-navigation__link {
+    flex-grow: 1;
+}
+
+ul .user-profile-navigation {
+	width: 100%;
+}
+
+li .user-profile-navigation__link {
+	width: 100%;
+}
+
+/* Banner notif */
+.wds-banner-notification {
+	animation: notification;
+	animation-duration: 5s;
+}
+
+/* Smoothing */
+html {
+	-webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+.wds-dropdown__content .wds-global-navigation__search-suggestions .wds-is-not-scrollable {
+	cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip {
+	cursor: help;
+	border-bottom: 1px dotted white;
+}
+
+.warning {
+	color: yellow;
+}
+
+hr {
+	background-color: white;
+	background-size: cover;
+}
+
+/* Mark redirects in Special:Allpages and Special:Watchlist */
+/* Copied from Logopedia logos.fandom.com */
+.allpagesredirect {
+   font-style: italic;
+}
+.allpagesredirect:after {
+   color: grey; content: " (redirect)"
+}
+.watchlistredir {
+   font-style: italic;
+}
+
+.mw-search-createlink::after {
+	content: " You could also check out other search results we find below!";
+}
+
+/* TOC customization */
+.toc {
+	background-color: #0000008f;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: 5px solid white;
+}
+
+/* Button customization */
+.wds-button {
+	font-family: Rubik;
+	font-weight: bold;
+}
+
+/* Styles for the button used on [[Help:Collapsing]] */
+a.wikia-button, .wikia-single-button a, .wikia-menu-button, input[type="submit"]:not(.wds-button), input[type="reset"], input[type="button"], .button, button {
+ 	background-color: #404a57;
+ 	background: -ms-linear-gradient(top,#566374 35%,#404a57 65%);
+ 	border: 1px solid #404a57;
+ 	border-radius: 4px;
+ 	color: #fff;
+ 	cursor: pointer;
+ 	display: inline-block;
+ 	font-family: Helvetica,Arial,sans-serif;
+ 	font-size: 12px;
+ 	height: 19px;
+ 	line-height: 20px;
+ 	margin: 0;
+ 	padding: 0 10px;
+ 	text-decoration: none;
+ 	white-space: nowrap;
+ }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+::-webkit-scrollbar:hover {
+	width: 30px;
+	transition: width 3s;
+}
+
+body::-webkit-scrollbar {
+	background: #002a32;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ffffff;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #d9d9d9;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #b9b9b9;
+}
+
+/* Copied from GTA wiki, again */
+/* Hover effects in Special:Images and article galleries */
+
+/*
+div.wikia-gallery-item .thumb:hover {
+    transform: scale(1.05,1.05);
+    transition: ease-in-out 0.2s;
+}
+ 
+div.wikia-gallery-item .thumb {
+    transition: ease-in-out 0.1s;
+}
+*/
+
+.article-categories .CategorySelect .articlePage .userCanEdit {
+	font: Rubik;
+}
+
+.mw-collapsible-toggle.mw-collapsible-toggle-default.mw-collapsible-toggle-expanded {
+	color: black;
+}
+
+/* Links */
+.mw-parser-output a.external[href*=".fandom.com"]::after {
+    content :none;
+}
+
+/* Category box */
+div#catlinks.catlinks {
+	background-color: black;
+}
+
+/* Community page */
+.community-page-subheader-welcome-message {
+	color: black;
+}
+
+/* Key */
+.keyboard-key, kbd {
+	background-color: black;
+	padding: 3px;
+	border: 1px solid white;
+	border-radius: 3px;
+	font-size: 0.85em;
+	white-space: nowrap;
+	color: white;
+}
+
+/* Collapsible colouring */
+a.mw-collapsible-text {
+	color: black !important;
+}
