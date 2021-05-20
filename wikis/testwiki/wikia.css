@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomIcons.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FullWidthOasis.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:DarkBalancedMessageBoxes.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:PseudoMonobook.css&only=styles";
+
+
+:root {
+	--oasis-community-background-image: url(https://static.wikia.nocookie.net/the_portal_wiki/images/5/58/Rickroll.gif/revision/latest);
+}
+
+
+
+::selection {
+	background-color: yellow;
+	color: inherit;
+}
+
+@keyframes cursor-blink {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+header.wds-community-header {
+	font-family: "Bebas Neue";
+	font-size: x-large;
+	font-weight: bold;
+}
+
+span#mainpage-intro-title {
+	font-size: larger;
+	font: Rubik;
+}
+
+span#mainpage-title {
+	font-size: x-large;
+	font: Rubik;
+	font-weight: bold;
+}
+
+span#mainpage-subtitle {
+	font: Rubik;
+	font-style: italic;
+}
+
+#menu-container {
+	border: 1px solid white;
+	padding: 5px;
+	width: 100%;
+}
+
+.menu-item {
+	padding: 5px;
+	background: black;
+	color: white;
+	border: 2px solid white;
+	width: 50%;
+	transition: width 1s;
+	cursor: pointer;
+}
+
+.menu-item:hover {
+	width: 100%;
+}
+
+.wds-community-header__top-container {
+	text-align: center;
+}
+
+.cursor-blink::after {
+    content: "";
+    border-right: 1px solid black;
+    animation: cursor-blink 1.5s infinite;
+    position: relative;
+    left: 1px;
+}
+
+pre {
+	background-color: darkgrey !important;
+    font-size: 100%;
+	overflow: auto;
+	height: auto;
+	width: 100%;
+	white-space: pre-wrap !important;
+	padding: 3px;
+}
+
+input.mw-inputbox-input.searchboxInput.mw-ui-input.mw-ui-input-inline {
+	border: 1px solid lightgrey;
+	height: 40px;
+	border-radius: 30px;
+	width: 80%;
+	background-color: white;
+	transition: box-shadow 2s;
+	font: arial, sans-serif;
+}
+
+input.mw-inputbox-input.searchboxInput.mw-ui-input.mw-ui-input-inline:hover {
+	box-shadow: 2px 3px 5px grey;
+}
+
+input.mw-inputbox-input.searchboxInput.mw-ui-input.mw-ui-input-inline:focus {
+	box-shadow: 2px 3px 5px grey;
+}
+
+input[type=submit] {
+	background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: normal;
+}
+
+#google-search {
+	font-family: "Montserrat";
+}
+
+input[type=search] {
+	background-color: rgba(255,255,255,0.5);
+    color: #000000;
+    width: 100%;
+    height: 2.15384615em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    padding: 5px 2.15384615em 5px 0.4em;
+    box-shadow: inset 0 0 0 1px transparent;
+    font-family: inherit;
+    font-size: 0.8125em;
+    direction: ltr;
+    -webkit-transition: border-color 250ms,box-shadow 250ms;
+    transition: border-color 250ms,box-shadow 250ms;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* props to Noreplyz for this wonderful animation! */
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}	
+}
+
+.WikiaPage {
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+	visibility: visible !important;
+}
+
+nav.wds-community-header__local-navigation {
+	text-align: justify;
+}
+
+div#mixed-content-footer {
+	display: none;
+}
+
+div.thumb-container {
+	overflow: hidden;
+	display: block;
+}
+
+div.thumb-child {
+	overflow: visible;
+	margin: auto;
+	text-align: center;
+}
+
+div.thumb-text {
+	z-index: 5;
+	background: rgba(192, 192, 192, 0.5);
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  perspective: 500px;
+  margin: 100px;
+}
+
+@keyframes turn {
+  from { transform: rotate3d(0, 0, 0, 0); }
+  to { transform: rotate3d(1, 1, 0, 360deg); }
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: turn 5s linear infinite;
+}
+
+.face {
+  width: 200px;
+  height: 200px;
+  background: skyblue;
+  border: 2px solid black;
+  position: absolute;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.left {
+  transform: translateX(-100px) rotateY(-90deg);
+}
+
+.right {
+  transform: translateX(100px) rotateY(90deg);
+}
+
+.top {
+  transform: translateY(-100px) rotateX(90deg);
+}
+
+.bottom {
+  transform: translateY(100px) rotateX(-90deg);
+}
+
+#userProfileApp .user-identity-bio.overflow:before {
+	background: none;
+}
+
+div.user-identity-avatar {
+	animation: slideUp 1s;
+}
+
+div.user-identity-header {
+	animation: slideUp 1s;
+	animation-delay: 1s;
+}
+
+div.user-identity-stats {
+	animation: slideUp 1s;
+	animation-delay: 2s;
+}
+
+div.user-identity-bio {
+	animation: slideUp 1s;
+	animation-delay: 3s;
+}
+
+button.wds-button.user-bio-open-modal-button {
+	animation: slideUp 1s;
+	animation-delay: 4s;
+}
+
+ul.user-identity-social {
+	animation: slideUp 1s;
+	animation-delay: 5s;
+}
+
+ul.user-profile-navigation {
+	animation: slideUp 1s;
+	animation-delay: 6s;
+}
+
+#firstHeading .firstHeading h1 {
+    background-color: #dfec24;
+    background-color: var(--fandom-theme-accent-color);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: #0e191a;
+    display: inline;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0;
+    padding: 0 6px;
+}
+
+h2, h3, h4 {
+    margin: 0 0 30px;
+    background-image: -webkit-gradient(linear,left top,right top,from(#dfec24),to(#dfec24));
+    background-image: -webkit-linear-gradient(left,#dfec24,#dfec24);
+    background-image: -o-linear-gradient(left,#dfec24,#dfec24);
+    background-image: linear-gradient(
+90deg
+,#dfec24,#dfec24);
+    background-image: -webkit-gradient(linear,left top,right top,from(var(--fandom-theme-accent-color)),to(var(--fandom-theme-accent-color)));
+    background-image: -webkit-linear-gradient(left,var(--fandom-theme-accent-color),var(--fandom-theme-accent-color));
+    background-image: -o-linear-gradient(left,var(--fandom-theme-accent-color),var(--fandom-theme-accent-color));
+    background-image: linear-gradient(
+90deg
+,var(--fandom-theme-accent-color),var(--fandom-theme-accent-color));
+    background-position: 0 .85em;
+    background-repeat: repeat-x;
+    background-size: 1px 4px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: #002a32;
+    display: inline;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0 6px;
+    text-transform: uppercase;
+}
+
+.WikiaPage p {
+    font-family: Rubik,Helvetica,Arial,sans-serif;
+    color: #002a32;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    position: relative;
+}
+
+a {
+    color: #088488;
+    text-decoration: none;
+}
+
+html body footer.wds-global-footer {
+	text-align: center;
+}
