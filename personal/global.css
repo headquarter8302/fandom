@@ -14,19 +14,19 @@
 
 
 div.wds-global-navigation__content-bar-left {
-	display: none;
+	display: none !important;
 }
 
 div.wds-global-navigation__content-bar-right {
-	width: 100%;
+	width: 100% !important;
 }
 
 div#WikiaBar {
-	display: none;
+	display: none !important;
 }
 
 div.wds-global-navigation__start-a-wiki {
-	display: none;
+	display: none !important;
 }
 
 nav#globalNavigation {
