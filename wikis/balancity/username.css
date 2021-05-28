@@ -1,5 +1,5 @@
 /* Color user names of sysops in recent changes, logs, page histories, etc. */
-a.mw-userlink[href$="/wiki/User:Headquarter8302"] {
+a[href$="/wiki/User:Headquarter8302"] {
 	color:#5100ff !important;
 	font-weight: bold !important;
 	background-color: rgba(138, 91, 224, 0.3);
