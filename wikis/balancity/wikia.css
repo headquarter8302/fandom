@@ -402,20 +402,6 @@ body::-webkit-scrollbar {
 	background: #b9b9b9;
 }
 
-/* Copied from GTA wiki, again */
-/* Hover effects in Special:Images and article galleries */
-
-/*
-div.wikia-gallery-item .thumb:hover {
-    transform: scale(1.05,1.05);
-    transition: ease-in-out 0.2s;
-}
- 
-div.wikia-gallery-item .thumb {
-    transition: ease-in-out 0.1s;
-}
-*/
-
 .article-categories .CategorySelect .articlePage .userCanEdit {
 	font: Rubik;
 }
@@ -453,4 +439,9 @@ div#catlinks.catlinks {
 /* Collapsible colouring */
 a.mw-collapsible-text {
 	color: black !important;
+}
+
+/* Prevent unmatched background colour */
+#userProfileApp .user-identity-bio.overflow:before {
+	background: none;
 }
