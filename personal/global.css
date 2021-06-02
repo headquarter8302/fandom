@@ -12,28 +12,6 @@
     image-rendering: crisp-edges;
 }
 
-
-div.wds-global-navigation__content-bar-left {
-	display: none !important;
-}
-
-div.wds-global-navigation__content-bar-right {
-	width: 100% !important;
-}
-
 div#WikiaBar {
 	display: none !important;
-}
-
-div.wds-global-navigation__start-a-wiki {
-	display: none !important;
-}
-
-nav#globalNavigation {
-	background: rgba(0, 42, 50, 0.5);
-	transition: background 1s ease-out;
-}
-
-nav#globalNavigation:hover {
-	background: #002a32;
 }
