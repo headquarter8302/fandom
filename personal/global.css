@@ -37,3 +37,7 @@ nav#globalNavigation {
 nav#globalNavigation:hover {
 	background: #002a32;
 }
+
+.global-navigation__top {
+	display: none;
+}
