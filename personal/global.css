@@ -19,3 +19,12 @@ a.global-navigation__link:not(.global-navigation__search) {
 .global-navigation__link.wds-dropdown.wds-open-to-right.wds-has-shadow.attach-to-bottom {
 	display:none;
 }
+
+html:not(.ve-activated) .page.has-right-rail .page__right-rail {
+    transition: width .3s;
+    width: 290px;
+}
+
+.rail-module {
+    background-color: black;
+}
