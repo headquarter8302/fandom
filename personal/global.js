@@ -9,6 +9,9 @@ importArticles({
         'u:dev:MediaWiki:UserAccountAge/code2.js',
         'u:dev:MediaWiki:SoundcloudPlayer.js',
         'u:dev:MediaWiki:ToggleSideBar/code.js',
+        'u:dev:MediaWiki:CodeblockLineNumbers/code.js',
+        'u:dev:MediaWiki:InputUsername/code.js',
+        'u:dev:MediaWiki:EditConflictAlert/code.js',
     ]
 });
 
