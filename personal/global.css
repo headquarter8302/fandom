@@ -1,8 +1,5 @@
 /* Imports */
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:Highlight.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:NoCustomCursors.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:AdRailRemove/code.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:ProfileIconsTextless.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:Highlight.css|MediaWiki:NoCustomCursors.css|MediaWiki:AdRailRemove/code.css|MediaWiki:ProfileIconsTextless.css&only=styles";
 
 /* Codes */
 .mw-parser-output img {
